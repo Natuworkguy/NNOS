@@ -6,7 +6,9 @@ echo "[--restart]: Restart NNOS, or your machine if needed"
 echo "By The Nathan Network, INC™. All rights reserved"
 exit 1
 }
-help()
+hx() {
+echo "Usage: nnos: <Command>"
+}
 case "$OPTION" in
         --restart)
           reboot
@@ -18,7 +20,7 @@ case "$OPTION" in
 	  help()
           ;;
         ?)
-        echo "Usage: nnos: <Command>"
+        hx
         exit 1
         ;;
 esac
