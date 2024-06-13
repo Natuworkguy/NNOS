@@ -30,7 +30,7 @@ case "$OPTION" in
 	--install)
          echo "1" > /var/nnos/binarystorage/installed
 	  mv "$0" /usr/bin/
-	  echo 'To use NNOS, call the "$0" command anytime.'
+	  echo 'To use NNOS, call the "$0" command anytime..'
 	  ;;
 esac
 fi
