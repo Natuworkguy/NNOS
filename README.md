@@ -18,7 +18,7 @@ Welcome to **NNOS**, your friendly companion for navigating the world of Linux (
 
 Ready to join the conversation? Here's how to install **NNOS**:
 
-**On Linux:**
+#**On Linux:**
 
 1. [Download NNOS for linux](https://github.com/Natuworkguy/NNOS/blob/2.4.4/linux/)
 2. Download nnos
@@ -43,7 +43,7 @@ Ready to join the conversation? Here's how to install **NNOS**:
    ```bash
    nnos --shutdown
    ```
-**On Windows**
+#**On Windows**
 1. [Download NNOS for Windows] (https://github.com/Natuworkguy/NNOS/tree/2.4.4/win)
 2. Download run.bat
 3. Move run.bat to a directory of your choice (e.g.: *Documents*). The directory will not effect the operation of the file
