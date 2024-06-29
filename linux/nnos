@@ -47,6 +47,7 @@ if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
 else
     case "$OPTION" in
         --install)
+            
             echo "1" > /var/nnos/binarystorage/installed
             apt install apache2
             apt install toilet
