@@ -30,13 +30,15 @@ if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
             ;;
         --help)
             help
-            exit 0
+            exit 1
             ;;
         -p)
             nnpm
             exit 0
+            ;;
         --hello)
             toilet "hello!"
+            ;;
         *)
             echo "Usage: nnos: <Command>"
             exit 1
@@ -46,7 +48,7 @@ else
     case "$OPTION" in
         --install)
             echo "1" > /var/nnos/binarystorage/installed
-            apt intall apache2
+            apt install apache2
             apt install toilet
             apt install python3
             apt install lolcat
