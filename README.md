@@ -29,9 +29,9 @@ chmod +x nnos;./nnos
    ```
 5. Also, NNOS can do simple tasks, such as reboot your machine
 
- ```bash
- nnos --restart
- ```
+   ```bash
+   nnos --restart
+   ```
 
 ## Contributing
 
