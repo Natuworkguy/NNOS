@@ -43,6 +43,10 @@ Ready to join the conversation? Here's how to install **NNOS**:
    ```bash
    nnos --shutdown
    ```
+8. NNOS can install your favorite packages using NNPM (Nathan Network Package Manager)
+   ```bash
+   nnos -p
+   ```
 # On Windows
 1. [Download NNOS for Windows] (https://github.com/Natuworkguy/NNOS/tree/2.4.4/win)
 2. Download run.bat
