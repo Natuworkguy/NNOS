@@ -35,6 +35,8 @@ if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
         -p)
             nnpm
             exit 0
+        --hello)
+            toilet "hello!"
         *)
             echo "Usage: nnos: <Command>"
             exit 1
