@@ -30,7 +30,7 @@ if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
             help
             ;;
         *)
-            echo "usage: nnos: <Command>"
+            echo "Usage: nnos: <Command>"
             exit 1
             ;;
     esac
@@ -39,7 +39,7 @@ else
         --install)
             echo "1" > /var/nnos/binarystorage/installed
             mv "$0" /usr/bin/
-            echo 'To use NNOS, call the "$0" command anytime..'
+            echo "To use NNOS, call the $(basename $0) command anytime."
             ;;
         *)
             echo "Usage: nnos: <Command>"
@@ -47,4 +47,3 @@ else
             ;;
     esac
 fi
-
