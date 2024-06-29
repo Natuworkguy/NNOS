@@ -21,7 +21,9 @@ Ready to join the conversation? Here's how to install **NNOS**:
 1. Open your terminal (or PowerShell on Windows).
 2. Download NNOS an make sure you are in the same directory as the file
 3. Type the following command:
-chmod +x nnos;./nnos
+   ```bash
+   chmod +x nnos;./nnos
+   ```
 4. Once installed, say hello to **NNOS**:
 
    ```bash
