@@ -19,22 +19,26 @@ Welcome to **NNOS**, your friendly companion for navigating the world of Linux (
 Ready to join the conversation? Here's how to install **NNOS**:
 
 1. Open your terminal (or PowerShell on Windows).
-2. Download NNOS an make sure you are in the same directory as the file
+2. Download NNOS and make sure you are in the same directory as the nnos file
 3. Type the following command:
    ```bash
-   chmod +x nnos;./nnos
+   ./nnos --install
    ```
-4. Once installed, say hello to **NNOS**:
+   You will only need to do this once
+5. Now, say hello to **NNOS**:
 
    ```bash
    nnos --help
    ```
-5. Also, NNOS can do simple tasks, such as reboot your machine
+6. Also, NNOS can do simple tasks, such as reboot your machine
 
    ```bash
    nnos --restart
    ```
-
+7. NNOS can power off your machine as well
+   ```bash
+   nnos --shutdown
+   ```
 ## Contributing
 
 Got ideas? Found a bug? Want to share a Linux meme? Head over to our [GitHub repository](https://github.com/natuworkguy/NNOS) and join the party. We're all ears (and voices)!
