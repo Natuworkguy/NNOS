@@ -42,6 +42,7 @@ else
         --install)
             echo "1" > /var/nnos/binarystorage/installed
             mv "$0" /usr/bin/
+            chmod +x $0
             echo "To use NNOS, call the $(basename $0) command anytime."
             exit 0
             ;;
