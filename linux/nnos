@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Check if the script is run as root
 if [[ $EUID -ne 0 ]]; then
     echo "This script must be run as root."
     exit 1
@@ -9,8 +8,7 @@ fi
 mkdir -p /var/nnos/binarystorage/
 touch /var/nnos/binarystorage/installed >> /var/log/syslog
 
-# Define the available options (e.g., --install, --restart, --shutdown)
-OPTION="$1"  # Get the first command-line argument
+OPTION="$1"
 
 if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
     help() {
@@ -32,7 +30,7 @@ if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
             help
             ;;
         *)
-            echo "Usage: nnos: <Command>"
+            echo "usage: nnos: <Command>"
             exit 1
             ;;
     esac
