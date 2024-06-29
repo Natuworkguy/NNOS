@@ -21,29 +21,28 @@ Ready to join the conversation? Here's how to install **NNOS**:
 # On Linux:
 
 1. [Download NNOS for linux](https://github.com/Natuworkguy/NNOS/blob/2.4.4/linux/)
-2. Download nnos
-3. Open terminal
+2. Open terminal
    and make sure you are in the same directory as the nnos file
-4. Type the following command:
+3. Type the following command:
    ```bash
    ./nnos --install
    ```
    You will only need to do this once
-5. Now, say hello to **NNOS**:
+4. Now, say hello to **NNOS**:
 
    ```bash
    nnos --hello
    ```
-6. Also, NNOS can do simple tasks, such as reboot your machine
+5. Also, NNOS can do simple tasks, such as reboot your machine
 
    ```bash
    nnos --restart
    ```
-7. NNOS can power off your machine as well
+6. NNOS can power off your machine as well
    ```bash
    nnos --shutdown
    ```
-8. NNOS can install your favorite packages using NNPM (Nathan Network Package Manager)
+7. NNOS can install your favorite packages using NNPM (Nathan Network Package Manager)
    ```bash
    nnos -p
    ```
