@@ -20,7 +20,7 @@ Ready to join the conversation? Here's how to install **NNOS**:
 
 # On Linux:
 
-1. [Download NNOS for linux](https://github.com/Natuworkguy/NNOS/blob/2.4.4/linux/)
+1. [Download NNOS for linux](https://github.com/Natuworkguy/NNOS/blob/2.4.8/linux/)
 2. Open terminal
    and make sure you are in the same directory as the nnos file
 3. Type the following command:
@@ -47,7 +47,7 @@ Ready to join the conversation? Here's how to install **NNOS**:
    nnos -p
    ```
 # On Windows
-1. [Download NNOS for Windows] (https://github.com/Natuworkguy/NNOS/tree/2.4.4/win)
+1. [Download NNOS for Windows] (https://github.com/Natuworkguy/NNOS/tree/2.4.8/win)
 2. Download run.bat
 3. Move run.bat to a directory of your choice (e.g.: *Documents*). The directory will not effect the operation of the file
 4. Open Terminal
