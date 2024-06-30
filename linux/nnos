@@ -13,8 +13,10 @@ OPTION="$1"
 if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
     help() {
         echo "Usage: nnos:"
+        echo "[--hello]:  Say hello to NNOS!"
         echo "[--help]: Display help information for NNOS"
         echo "[--restart]: Restart NNOS, or your machine if needed"
+        echo "[--shutdown]: Shutdown NNOS, or your machine if needed"
         echo "By The Nathan Network, INC™. All rights reserved"
         exit 1
     }
