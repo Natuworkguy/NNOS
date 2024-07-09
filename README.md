@@ -13,7 +13,7 @@ Welcome to **NNOS**, your friendly companion for navigating the world of Linux (
 3. **Windows, Meet NNOS**: Windows users, fear not! **NNOS** isn't an exclusive Linux club. It's the bridge between worlds. So whether you're in the penguin-loving camp or the Windows fan club, we've got you covered.
 
 4. **Learn as You Go (Coming Soon)**: Curious about a command? Just ask! **NNOS** provides helpful explanations, examples, and even a dash of humor. Learning Linux has never been this friendly.
-5. ** Everyday comands **: Common commands  made easier (making the reboot command nnos restart)
+5. ** Everyday comands **: Common commands  made easier (Simplifing the reboot command and making it 'nnos restart')
 ## Installation
 
 Ready to join the conversation? Here's how to install **NNOS**:
