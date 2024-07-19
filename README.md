@@ -13,21 +13,52 @@ Welcome to **NNOS**, your friendly companion for navigating the world of Linux (
 3. **Windows, Meet NNOS**: Windows users, fear not! **NNOS** isn't an exclusive Linux club. It's the bridge between worlds. So whether you're in the penguin-loving camp or the Windows fan club, we've got you covered.
 
 4. **Learn as You Go (Coming Soon)**: Curious about a command? Just ask! **NNOS** provides helpful explanations, examples, and even a dash of humor. Learning Linux has never been this friendly.
-5. ** Everyday comands **: Common commands  made easier (Simplifing the reboot command and making it 'nnos restart')
+5. ** Everyday comands **: Common commands  made easier (making the reboot command nnos restart)
 ## Installation
 
 Ready to join the conversation? Here's how to install **NNOS**:
 
-1. Open your terminal (or PowerShell on Windows).
-2. Download NNOS an make sure you are in the same directory as the file
+# On Linux:
+
+1. [Download NNOS for linux](https://github.com/Natuworkguy/NNOS/blob/2.4.8/linux/)
+2. Open terminal
+   and make sure you are in the same directory as the nnos file
 3. Type the following command:
-chmod +x nnos;./nnos
-4. Once installed, say hello to **NNOS**:
+   ```bash
+   ./nnos --install
+   ```
+   You will only need to do this once
+4. Now, say hello to **NNOS**:
 
    ```bash
-   nnos --help
+   nnos --hello
    ```
+5. Also, NNOS can do simple tasks, such as reboot your machine
 
+   ```bash
+   nnos --restart
+   ```
+6. NNOS can power off your machine as well
+   ```bash
+   nnos --shutdown
+   ```
+7. NNOS can install your favorite packages using NNPM (Nathan Network Package Manager)
+   ```bash
+   nnos -p
+   ```
+# On Windows
+1. [Download NNOS for Windows] (https://github.com/Natuworkguy/NNOS/tree/2.4.8/win)
+2. Download run.bat
+3. Move run.bat to a directory of your choice (e.g.: *Documents*). The directory will not effect the operation of the file
+4. Open Terminal
+5. Go to the directory you chose using the cd command e.g.:
+   ```PowerShell
+   cd Documents
+   ```
+6. Finally, execute the file
+   ```PowerShell
+   run.bat
+   ```
 ## Contributing
 
-Got ideas? Found a bug? Want to share a Linux meme? Head over to our [GitHub repository](https://github.com/natuworkguy/NNOS) and join the party. We're all ears (and voices)!
+Got ideas? Found a bug? Want to share a Linux meme? Head over to our [GitHub repository](https://github.com/Natuworkguy/NNOS/tree/2.4.4) and join the party. We're all ears (and voices)!
