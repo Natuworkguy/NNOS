@@ -20,7 +20,7 @@ Ready to join the conversation? Here's how to install **NNOS**:
 
 # On Linux:
 
-1. [Download NNOS for linux](https://github.com/Natuworkguy/NNOS/blob/2.4.8/linux/)
+1. [Download NNOS for linux](https://github.com/Natuworkguy/NNOS/blob/2.4.9/linux/)
 2. Open terminal
    and make sure you are in the same directory as the nnos file
 3. Type the following command:
@@ -40,14 +40,14 @@ Ready to join the conversation? Here's how to install **NNOS**:
    ```
 6. NNOS can power off your machine as well
    ```bash
-   nnos --shutdown
+   nnos --poweroff
    ```
 7. NNOS can install your favorite packages using NNPM (Nathan Network Package Manager)
    ```bash
    nnos -p
    ```
 # On Windows
-1. [Download NNOS for Windows] (https://github.com/Natuworkguy/NNOS/tree/2.4.8/win)
+1. [Download NNOS for Windows] (https://github.com/Natuworkguy/NNOS/tree/2.4.9/win)
 2. Download run.bat
 3. Move run.bat to a directory of your choice (e.g.: *Documents*). The directory will not effect the operation of the file
 4. Open Terminal
@@ -61,4 +61,4 @@ Ready to join the conversation? Here's how to install **NNOS**:
    ```
 ## Contributing
 
-Got ideas? Found a bug? Want to share a Linux meme? Head over to our [GitHub repository](https://github.com/Natuworkguy/NNOS/tree/2.4.4) and join the party. We're all ears (and voices)!
+Got ideas? Found a bug? Want to share a Linux meme? Head over to our [GitHub repository](https://github.com/Natuworkguy/NNOS/tree/2.4.9) and join the party. We're all ears (and voices)!
