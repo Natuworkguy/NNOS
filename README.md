@@ -1,6 +1,3 @@
-# Guide To NNOS
----
-
 # NNOS: Making Linux Easier (Debian Only)
 
 ## Overview
