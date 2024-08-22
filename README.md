@@ -1,47 +1,49 @@
-# NNOS: Making Linux Easier (Debian Only)
+# NNOS: Simplifying Linux for Everyone (Requires `apt`)
 
 ## Overview
 
-Welcome to **NNOS**, your friendly companion for navigating the world of Linux. Whether you're a seasoned command-line guru or just dipping your toes into the terminal waters, **NNOS** is here to make your life easier. Please note that **NNOS** is designed to run exclusively on Debian.
+**NNOS** is designed to streamline your Linux experience, whether you're a command-line veteran or just getting started with the terminal. This tool is specifically crafted for systems that use `apt`, ensuring seamless integration and ease of use.
 
 ## Key Features
 
-1. **Speak Your Mind (Coming Soon)**: Tired of typing? Just say it! **NNOS** understands natural language commands, so go ahead and tell it what you need. Whether it's opening a directory or installing a package, your voice is your superpower.
+- **Natural Language Commands (Coming Soon)**: Eliminate the need for complex commands by simply speaking your requests. **NNOS** can interpret natural language, enabling voice-driven actions such as opening directories or installing packages.
 
-2. **Package Magic**: Installing software shouldn't feel like deciphering ancient scrolls. With **NNOS**, package management becomes a breeze. Say goodbye to cryptic commands; just ask for what you want, and watch the magic happen.
+- **Simplified Package Management**: Navigate the complexities of software installation with ease. **NNOS** transforms package management into an intuitive process, allowing you to request software installations in plain language.
 
-3. **Learn as You Go (Coming Soon)**: Curious about a command? Just ask! **NNOS** provides helpful explanations, examples, and even a dash of humor. Learning Linux has never been this friendly.
-
-4. **Everyday Commands**: Common commands made easier (e.g., making the reboot command `nnos restart`).
+- **Interactive Learning (Coming Soon)**: Get instant explanations and examples for any command. **NNOS** not only executes your commands but also helps you understand them, making learning Linux more engaging.
 
 ## Installation
 
-Ready to join the conversation? Here's how to install **NNOS** on Debian:
+To install **NNOS** on a system with `apt`, follow these steps:
 
-1. [Download NNOS for Debian](https://github.com/Natuworkguy/NNOS/blob/2.4.9/linux/)
-2. Open terminal and make sure you are in the same directory as the NNOS file.
-3. Type the following command:
+1. Download the NNOS package.
+2. Open a terminal and navigate to the directory containing the NNOS file.
+3. Execute the installation with:
    ```bash
    ./nnos --install
    ```
-   You will only need to do this once.
-4. Now, say hello to **NNOS**:
+4. For advanced functionality, you can enable **Dev Mode** by adding the `-d` flag:
    ```bash
-   nnos --hello
-   ```
-5. NNOS can also perform simple tasks, such as rebooting your machine:
-   ```bash
-   nnos --restart
-   ```
-6. NNOS can power off your machine as well:
-   ```bash
-   nnos --poweroff
-   ```
-7. NNOS can install your favorite packages using NNPM (Nathan Network Package Manager):
-   ```bash
-   nnos -p
+   ./nnos --install -d
    ```
 
-## Contributing
+### Dev Mode Features
 
-Got ideas? Found a bug? Want to share a Linux meme? Head over to our [GitHub repository](https://github.com/Natuworkguy/NNOS/tree/2.4.9) and join the party. We're all ears (and voices)!
+With Dev Mode, you gain access to experimental features:
+
+- **Feature Experimentation**: Place programs in `/var/nnos/dev/packages` and execute them with:
+  ```bash
+  nnos -e <file>
+  ```
+  Ensure the file has the correct extension (e.g., `.js`, `.sh`, `.rb`). You can also pipe `-e` to run shell scripts directly.
+
+- **Chatbot Integration**: Engage with the built-in chatbot by using the `-b` flag:
+  ```bash
+  nnos -b
+  ```
+
+- **Additional Experimental Tools**: Dev Mode provides a range of tools for advanced users to explore.
+
+## About NNOS
+
+**NNOS** is developed by **The Nathan Network**. For more details, updates, and related services such as **Web33**, visit [nathannetwork.com](http://nathannetwork.com). We welcome your feedback and suggestions—please reach out via the **Contact Us** section on the website if you have feature requests or ideas for future enhancements.
