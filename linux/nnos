@@ -30,7 +30,14 @@ if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
             ;;
         --help)
             help
+            exit 1
+            ;;
+        -p)
+            nnpm
             exit 0
+            ;;
+        --hello)
+            toilet "hello!"
             ;;
         *)
             echo "Usage: nnos: <Command>"
@@ -41,13 +48,21 @@ else
     case "$OPTION" in
         --install)
             echo "1" > /var/nnos/binarystorage/installed
+            apt install apache2
+            apt install toilet
+            apt install python3
+            apt install lolcat
+            wget http://downloads.nathannetwork.com/m/nnos/nnpm/nnpm
+            mv nnpm /bin/
+            apt update
+            apt upgrade
             mv "$0" /usr/bin/
             chmod +x $0
             echo "To use NNOS, call the $(basename $0) command anytime."
             exit 0
             ;;
         *)
-            echo "Usage: nnos: <Command>"
+            echo "NNOS is not installed. Use nnos --install to install NNOS"
             exit 1
             ;;
     esac
