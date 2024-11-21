@@ -18,16 +18,44 @@ Welcome to **NNOS**, your friendly companion for navigating the world of Linux (
 
 Ready to join the conversation? Here's how to install **NNOS**:
 
-1. Open your terminal (or PowerShell on Windows).
-2. Download NNOS an make sure you are in the same directory as the file
-3. Type the following command:
-chmod +x nnos;./nnos
-4. Once installed, say hello to **NNOS**:
+# On Linux:
+
+1. [Download NNOS for linux](https://github.com/Natuworkguy/NNOS/blob/2.4.4/linux/)
+2. Download nnos
+3. Open terminal
+   and make sure you are in the same directory as the nnos file
+4. Type the following command:
+   ```bash
+   ./nnos --install
+   ```
+   You will only need to do this once
+5. Now, say hello to **NNOS**:
 
    ```bash
-   nnos --help
+   nnos --hello
    ```
+6. Also, NNOS can do simple tasks, such as reboot your machine
 
+   ```bash
+   nnos --restart
+   ```
+7. NNOS can power off your machine as well
+   ```bash
+   nnos --shutdown
+   ```
+# On Windows
+1. [Download NNOS for Windows] (https://github.com/Natuworkguy/NNOS/tree/2.4.4/win)
+2. Download run.bat
+3. Move run.bat to a directory of your choice (e.g.: *Documents*). The directory will not effect the operation of the file
+4. Open Terminal
+5. Go to the directory you chose using the cd command e.g.:
+   ```PowerShell
+   cd Documents
+   ```
+6. Finally, execute the file
+   ```PowerShell
+   run.bat
+   ```
 ## Contributing
 
-Got ideas? Found a bug? Want to share a Linux meme? Head over to our [GitHub repository](https://github.com/natuworkguy/NNOS) and join the party. We're all ears (and voices)!
+Got ideas? Found a bug? Want to share a Linux meme? Head over to our [GitHub repository](https://github.com/Natuworkguy/NNOS/tree/2.4.4) and join the party. We're all ears (and voices)!

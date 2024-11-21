@@ -22,12 +22,15 @@ if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
     case "$OPTION" in
         --restart)
             reboot
+            exit 1
             ;;
         --shutdown)
             poweroff
+            exit 1
             ;;
         --help)
             help
+            exit 0
             ;;
         *)
             echo "Usage: nnos: <Command>"
@@ -39,7 +42,9 @@ else
         --install)
             echo "1" > /var/nnos/binarystorage/installed
             mv "$0" /usr/bin/
+            chmod +x $0
             echo "To use NNOS, call the $(basename $0) command anytime."
+            exit 0
             ;;
         *)
             echo "Usage: nnos: <Command>"
@@ -47,3 +52,4 @@ else
             ;;
     esac
 fi
+exit 0
