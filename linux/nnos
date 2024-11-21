@@ -1,36 +1,49 @@
 #!/bin/bash
+
+if [[ $EUID -ne 0 ]]; then
+    echo "This script must be run as root."
+    exit 1
+fi
+
 mkdir -p /var/nnos/binarystorage/
-touch /var/nnos/binarystorage/installed > /dev/null/output
-if ["$(cat /var/nnos/binarystorage/installed)" == "1"]; then
-help() {
-echo "Usage: nnos:"
-echo "[--help]: Display help information for NNOS"
-echo "[--restart]: Restart NNOS, or your machine if needed"
-echo "By The Nathan Network, INC™. All rights reserved"
-exit 1
-}
-help()
-case "$OPTION" in
-        --restart)
-          reboot
-	  ;;
-	--shutdown)
-	  poweroff
-	  ;;
-        --help)
-	  help()
-          ;;
-        ?)
-        echo "Usage: nnos: <Command>"
+touch /var/nnos/binarystorage/installed >> /var/log/syslog
+
+OPTION="$1"
+
+if [ "$(cat /var/nnos/binarystorage/installed)" == "1" ]; then
+    help() {
+        echo "Usage: nnos:"
+        echo "[--help]: Display help information for NNOS"
+        echo "[--restart]: Restart NNOS, or your machine if needed"
+        echo "By The Nathan Network, INC™. All rights reserved"
         exit 1
-        ;;
-esac
+    }
+
+    case "$OPTION" in
+        --restart)
+            reboot
+            ;;
+        --shutdown)
+            poweroff
+            ;;
+        --help)
+            help
+            ;;
+        *)
+            echo "Usage: nnos: <Command>"
+            exit 1
+            ;;
+    esac
 else
-case "$OPTION" in
-	--install)
-         echo "1" > /var/nnos/binarystorage/installed
-	  mv "$0" /usr/bin/
-	  echo 'To use NNOS, call the "$0" command anytime..'
-	  ;;
-esac
+    case "$OPTION" in
+        --install)
+            echo "1" > /var/nnos/binarystorage/installed
+            mv "$0" /usr/bin/
+            echo "To use NNOS, call the $(basename $0) command anytime."
+            ;;
+        *)
+            echo "Usage: nnos: <Command>"
+            exit 1
+            ;;
+    esac
 fi
