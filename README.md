@@ -1,7 +1,3 @@
-Sure, here's the modified README to state that NNOS only runs on Debian:
-
----
-
 # NNOS: Making Linux Easier (Debian Only)
 
 ## Overview
